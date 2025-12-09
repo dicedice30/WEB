@@ -1,6 +1,6 @@
 body { margin:0; font-family: Arial, sans-serif; background:#f7f7f7; color:#333;}
-header { background:#1f1f1f; color:white; padding:20px; display:flex; justify-content:space-between; align-items:center;}
+header { background:#154734; color:white; padding:20px; display:flex; justify-content:space-between; align-items:center;}
 header nav a { color:white; margin-left:15px; text-decoration:none; }
 .hero { padding:120px 20px; text-align:center; background:#A3866A; }
 .content { padding:40px 20px; max-width:900px; margin:auto; }
-footer { background:#1f1f1f; color:white; text-align:center; padding:15px; margin-top:40px;}
+footer { background:#154734; color:white; text-align:center; padding:15px; margin-top:40px;}

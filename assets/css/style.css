@@ -118,3 +118,86 @@ footer {
     padding: 15px;
   }
 }
+/* Slideshow */
+.slideshow-container {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Caption */
+.caption {
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  font-size: 1.1rem;
+}
+
+/* Arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  padding: 12px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  user-select: none;
+  border-radius: 3px;
+  background: rgba(0,0,0,0.3);
+}
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Dots */
+.dots-container {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.dot {
+  height: 14px;
+  width: 14px;
+  margin: 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fade animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.9s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}

@@ -1,20 +1,120 @@
-body { margin:0; font-family: Arial, sans-serif; background:#EEE1C6; color:#333;}
-header { background:#154734; color:white; padding:20px; display:flex; justify-content:space-between; align-items:center;}
-header nav a { color:white; margin-left:15px; text-decoration:none; }
-.hero { padding:120px 20px; text-align:center; background:#EEE1C6; }
-.content { padding:40px 20px; max-width:900px; margin:auto; background:#EEE1C6; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #EEE1C6;
+  color: #333;
+}
+
+/* ---- HEADER ---- */
+header {
+  background: #154734;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;      /* allows wrapping on mobile */
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* ---- BASIC SECTIONS ---- */
+.hero {
+  padding: 120px 20px;
+  text-align: center;
+  background: #EEE1C6;
+}
+
+.content {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  background: #EEE1C6;
+}
+
+/* ---- ABOUT US COLUMNS ---- */
 .about-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;   /* two equal columns */
-  gap: 40px;                        /* space between columns */
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
   padding-top: 20px;
 }
 
-.about-card { 
-  background: #154734;              /* or your cream color */
+/* CARDS */
+.about-card {
+  background: #154734;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-footer { background:#154734; color:white; text-align:center; padding:15px; margin-top:40px;}
-.logo { width: 150px; height: auto;}
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: white;                /* 🔥 makes text white */
+}
 
+.about-card h3,
+.about-card p {
+  color: white;                /* ensures ALL text in card is white */
+}
+
+/* ---- FOOTER ---- */
+footer {
+  background: #154734;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ---- LOGO ---- */
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+/* ---- MOBILE OPTIMIZATION ---- */
+@media (max-width: 768px) {
+
+  /* Stack columns on mobile */
+  .about-columns {
+    grid-template-columns: 1fr;
+  }
+
+  /* Reduce padding on mobile */
+  .content {
+    padding: 20px 15px;
+  }
+
+  header {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  header nav a {
+    margin: 10px;
+    display: inline-block;
+  }
+
+  .logo {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  .about-card {
+    padding: 15px;
+  }
+}

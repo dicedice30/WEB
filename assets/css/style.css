@@ -3,6 +3,18 @@ header { background:#154734; color:white; padding:20px; display:flex; justify-co
 header nav a { color:white; margin-left:15px; text-decoration:none; }
 .hero { padding:120px 20px; text-align:center; background:#EEE1C6; }
 .content { padding:40px 20px; max-width:900px; margin:auto; background:#EEE1C6; }
+.about-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* two equal columns */
+  gap: 40px;                        /* space between columns */
+  padding-top: 20px;
+}
+
+.about-card { 
+  background: #154734;              /* or your cream color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
 footer { background:#154734; color:white; text-align:center; padding:15px; margin-top:40px;}
 .logo { width: 150px; height: auto;}
 

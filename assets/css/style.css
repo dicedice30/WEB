@@ -77,6 +77,12 @@ footer {
   height: auto;
 }
 
+/* ---- Headshots ---- */
+.head {
+  width: 200px;
+  height: auto;
+}
+
 /* ---- MOBILE OPTIMIZATION ---- */
 @media (max-width: 768px) {
 
